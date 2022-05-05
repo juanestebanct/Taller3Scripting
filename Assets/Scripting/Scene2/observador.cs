@@ -5,7 +5,6 @@ using UnityEngine;
 public class observador : MonoBehaviour
 {
 
-
     private Renderer cubo ;
     void Start()
     {
@@ -17,7 +16,7 @@ public class observador : MonoBehaviour
     {
      
         chaceColor(contador);
-        Debug.Log($"el ciclo de color va en {contador}");
+     
     }
     private void chaceColor(int contador)
     {
@@ -32,14 +31,9 @@ public class observador : MonoBehaviour
             case 3:
                 cubo.material.color = Color.yellow;
                 break;
-
             case 4:
                 cubo.material.color = Color.green;
-       
                 break;
-
-
-
         }
     }
 }
