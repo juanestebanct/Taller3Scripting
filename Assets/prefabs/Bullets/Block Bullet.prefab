@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 802871913844377040}
   - component: {fileID: 2538063308947888365}
   - component: {fileID: 8266645304629159449}
-  - component: {fileID: 5321365119011863879}
   - component: {fileID: 8964540786158559587}
+  - component: {fileID: 5321365119011863879}
   m_Layer: 0
   m_Name: Block Bullet
   m_TagString: BlockBullet
@@ -97,20 +97,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5321365119011863879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6992045533641552301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9668078181d43e1afd8d2b51dca54b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoDestroyTime: 35
-  speed: 30
 --- !u!54 &8964540786158559587
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -127,3 +113,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5321365119011863879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6992045533641552301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9668078181d43e1afd8d2b51dca54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDestroyTime: 35
+  speed: 30
