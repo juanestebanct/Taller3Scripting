@@ -31,7 +31,7 @@ public abstract class FatherBulletPool : MonoBehaviour, I_Pool<Bullet>
     //No vamos a usar Factory
     protected virtual Bullet RetrieveBulletFromTypePool()
     {
-        //return BulletFactory.Instance.CreateItem(); //Revisar si necesitamos cambar el nombre
+        return null;//return BulletFactory.Instance.CreateItem(); //Revisar si necesitamos cambar el nombre
     }
 
     //Resetea la posición del clone en la escena

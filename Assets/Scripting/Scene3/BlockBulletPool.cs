@@ -17,4 +17,8 @@ public class BlockBulletPool : FatherBulletPool
     }
 
     //buscar con que remplazar el override de RetrieveItemFromFactory()
+    protected override Bullet RetrieveBulletFromTypePool()
+    {
+        return null; //FastBulletFactory.Instance.CreateItem();
+    }
 }
