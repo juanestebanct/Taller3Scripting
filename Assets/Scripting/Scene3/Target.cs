@@ -16,7 +16,6 @@ public class Target : MonoBehaviour
         
     }
 
-
     void OnCollisionEnter(Collision collision)
     {
         GameObject targetBullet = collision.gameObject;
