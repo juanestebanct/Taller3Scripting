@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class ParticleBullet : Bullet
 {
-    public Transform effect;
+    //public Transform effect;
 
     private ParticleSystem.EmissionModule particulas;
 
     // Start is called before the first frame update
     void Start()
     {
-        particulas = effect.GetComponent<ParticleSystem>().emission;
+        //particulas = effect.GetComponent<ParticleSystem>().emission;
 
+        particulas = this.GetComponentInChildren<ParticleSystem>().emission;
         particulas.enabled = false;
 
         
