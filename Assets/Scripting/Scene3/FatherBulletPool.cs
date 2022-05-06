@@ -27,8 +27,8 @@ public abstract class FatherBulletPool : MonoBehaviour, I_Pool<Bullet>
     private void CreateABullet()
     {
 
-        //Bullet bulletClone = RetrieveBulletFromTypePool(); 
-        Bullet bulletClone = new Bullet();
+        Bullet bulletClone = RetrieveBulletFromTypePool(); 
+        //Bullet bulletClone = new Bullet();
         InstancePoolList.Add(bulletClone);
         bulletClone.gameObject.SetActive(false);
         ResetClonePosition(bulletClone);
