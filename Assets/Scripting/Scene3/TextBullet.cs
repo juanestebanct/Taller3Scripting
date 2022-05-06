@@ -17,7 +17,7 @@ public class TextBullet : Bullet
         
     }
 
-    protected override void CollisionEffects()
+    internal override void CollisionEffects()
 
     {
 

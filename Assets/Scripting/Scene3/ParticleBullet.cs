@@ -16,7 +16,7 @@ public class ParticleBullet : Bullet
         
     }
 
-    protected override void CollisionEffects()
+    internal override void CollisionEffects()
     {
         //esta es la parte en la que hacemos el llamado a las particulas
     }

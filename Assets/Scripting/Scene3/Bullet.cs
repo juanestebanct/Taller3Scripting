@@ -37,7 +37,7 @@ public class Bullet : MonoBehaviour
         
     }
 
-    protected virtual void CollisionEffects()
+    internal virtual void CollisionEffects()
     {
 
 

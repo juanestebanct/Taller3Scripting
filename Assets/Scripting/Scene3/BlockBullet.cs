@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlockBullet : Bullet
 {
 
-    private Collider targetCollider;
+    internal Collider targetCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class BlockBullet : Bullet
         
     }
 
-    protected override void CollisionEffects()
+    internal override void CollisionEffects()
     {
         //esta es la parte en la que desactivamos el disparo y el collider.
 
