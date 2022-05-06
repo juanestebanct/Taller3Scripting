@@ -43,4 +43,14 @@ public class Bullet : MonoBehaviour
 
         
     }
+
+    public void OnBulletGot()
+    {
+        Invoke("DisableBullet", autoDestroyTime);
+    }
+
+    protected virtual void DisableBullet()
+    {
+        
+    }
 }
