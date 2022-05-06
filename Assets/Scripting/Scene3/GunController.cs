@@ -18,7 +18,10 @@ public class GunController : MonoBehaviour
     private GameObject ActualBullet;
     
 
-
+    private void Awake()
+    {
+        ActualBullet = TextBullet;
+    }
 
 
     void Update()
@@ -33,7 +36,6 @@ public class GunController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
 
-            ActualBullet = TextBulletPool.Instance.RetrieveBulletFromTypePool();
             BulletMovement(ActualBullet);
             
         }

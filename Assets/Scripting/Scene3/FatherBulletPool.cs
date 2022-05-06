@@ -37,7 +37,7 @@ public abstract class FatherBulletPool : MonoBehaviour, I_Pool<Bullet>
 
     //No vamos a usar Factory
     
-    public  virtual GameObject RetrieveBulletFromTypePool()
+    protected virtual Bullet RetrieveBulletFromTypePool()
     {
         return BulletFactory.Instance.CreateItem();
     }

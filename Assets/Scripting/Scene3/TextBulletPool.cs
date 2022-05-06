@@ -17,7 +17,7 @@ public class TextBulletPool : FatherBulletPool
     }
 
    
-    public override Bullet RetrieveBulletFromTypePool()
+    protected override Bullet RetrieveBulletFromTypePool()
     {
         return TextBFactory.Instance.CreateItem();
     }

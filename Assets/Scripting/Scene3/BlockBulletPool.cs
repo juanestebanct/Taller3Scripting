@@ -17,7 +17,7 @@ public class BlockBulletPool : FatherBulletPool
     }
 
     
-    protected override GameObject RetrieveBulletFromTypePool()
+    protected override Bullet RetrieveBulletFromTypePool()
     {
         return BlockBFactory.Instance.CreateItem();
     }
