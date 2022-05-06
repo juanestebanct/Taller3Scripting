@@ -8,7 +8,6 @@ public class Bullet : MonoBehaviour
 
     [SerializeField] private float autoDestroyTime;
     
-    
 
     private Rigidbody rb;
 
@@ -25,17 +24,8 @@ public class Bullet : MonoBehaviour
         }
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     internal virtual void CollisionEffects()
     {
-
-
         
     }
 
@@ -46,6 +36,7 @@ public class Bullet : MonoBehaviour
 
     protected virtual void DisableBullet()
     {
-        
+        Rb.velocity = Vector3.zero;
+        BulletPool.Instance.RecycleBullets(this);
     }
 }

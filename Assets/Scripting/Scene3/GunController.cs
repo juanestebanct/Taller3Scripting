@@ -9,21 +9,23 @@ public class GunController : MonoBehaviour
     //Velocidad de la bala:
     [SerializeField] private float speed = 30.0f;
 
+    /*
     //Prefabs de los 3 tipos de balas
     public GameObject TextBullet;
     public GameObject BlockBullet;
-    public GameObject ParticleBullet;
+    public GameObject ParticleBullet; 
 
     private GameObject ActualBullet;
+    */
 
     //Referencias a los pools
-    private BlockBulletPool blockBulletPool = new BlockBulletPool();
-    private ParticleBulletPool particleBulletPool = new ParticleBulletPool();
-    private TextBulletPool textBulletPool = new TextBulletPool();
+    //private BlockBulletPool blockBulletPool = new BlockBulletPool();
+    //private ParticleBulletPool particleBulletPool = new ParticleBulletPool();
+    //private TextBulletPool textBulletPool = new TextBulletPool();
 
     private void Awake()
     {
-        ActualBullet = TextBullet;
+        //ActualBullet = TextBullet;
     }
 
 
@@ -36,12 +38,13 @@ public class GunController : MonoBehaviour
     {
 
         //Revisar que cambios hay que hacer al implementar los pools
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Fire1"))
         {
-            BulletMovement(ActualBullet);
+            //BulletMovement(ActualBullet);
         }
         else if (Input.GetMouseButtonDown(1))
         {
+            /*
             if (ActualBullet == TextBullet)
             {
                 ActualBullet = BlockBullet;
@@ -54,7 +57,7 @@ public class GunController : MonoBehaviour
             {
                 ActualBullet = TextBullet;
             }
-
+            */
         }
 
     }

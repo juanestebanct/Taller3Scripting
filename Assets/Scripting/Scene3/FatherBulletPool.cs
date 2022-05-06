@@ -8,6 +8,7 @@ public abstract class FatherBulletPool : MonoBehaviour, I_Pool<Bullet>
 
     private List<Bullet> InstancePoolList = new List<Bullet>();
 
+
     private void Start()
     {
         FillPool();
@@ -26,7 +27,8 @@ public abstract class FatherBulletPool : MonoBehaviour, I_Pool<Bullet>
     private void CreateABullet()
     {
 
-        Bullet bulletClone = RetrieveBulletFromTypePool();
+        //Bullet bulletClone = RetrieveBulletFromTypePool(); 
+        Bullet bulletClone = new Bullet();
         InstancePoolList.Add(bulletClone);
         bulletClone.gameObject.SetActive(false);
         ResetClonePosition(bulletClone);
@@ -34,9 +36,10 @@ public abstract class FatherBulletPool : MonoBehaviour, I_Pool<Bullet>
     }
 
     //No vamos a usar Factory
+    
     protected virtual Bullet RetrieveBulletFromTypePool()
     {
-        return null;//return BulletFactory.Instance.CreateItem(); //Revisar si necesitamos cambar el nombre
+        return BulletFactory.Instance.CreateItem();
     }
 
     //Resetea la posición del clone en la escena
