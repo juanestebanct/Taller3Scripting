@@ -1,3 +1,3 @@
-public class BulletFactory : AbstractBulletFactory<Bullet>
+public class BulletFactory : AbstractBulletFactory<GameObject>
 {
 }
