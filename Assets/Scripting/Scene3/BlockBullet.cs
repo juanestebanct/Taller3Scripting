@@ -21,14 +21,14 @@ public class BlockBullet : Bullet
 
     internal override void CollisionEffects()
     {
-        //esta es la parte en la que desactivamos el disparo y el collider.
-
-        //CON ESTO DESACTIVAMOS EL COLLIDER!!!
-        // targetCollider.enabled = !targetCollider.enabled;
-
-        
-        
+        targetCollider.enabled = false;
 
 
+    }
+
+    IEnumerator DetenerParticulas()
+    {
+        yield return new WaitForSeconds(1f);
+        targetCollider.enabled = true;
     }
 }
