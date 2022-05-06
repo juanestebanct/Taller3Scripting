@@ -26,11 +26,11 @@ public class GunController : MonoBehaviour
 
     private void BulletSelector()
     {
-        if (Input.GetKeyUp(KeyCode.F1))
+        if (Input.GetMouseButtonDown(0))
         {
             
         }
-        else if (Input.GetKeyUp(KeyCode.F2))
+        else if (Input.GetMouseButtonDown(1))
         {
             
         }
